@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#101915">
+<meta name="description" content="لياقتي — مدربك الشخصي للتمارين المنزلية">
+<title>لياقتي | مدربك الشخصي</title>
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+:root{color-scheme:dark;--bg:#0c1411;--surface:#141f1a;--surface2:#1c2c24;--line:#2c4135;--text:#f3f7f2;--muted:#aabbb0;--lime:#c4f36b;--lime2:#9fda4d;--blue:#9cd8ff;--orange:#ffc78e;--danger:#ff9d91;--radius:22px;--shadow:0 14px 36px #0003}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 90% 0%,#1a3326 0,transparent 38%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.55}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--blue);outline-offset:3px}a{color:inherit}.app{max-width:880px;margin:auto;padding:16px 15px 108px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 2px 18px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:21px}.logo{width:43px;height:43px;border-radius:15px;display:grid;place-items:center;color:#142015;background:var(--lime);font-size:25px;box-shadow:0 6px 20px #c4f36b25}.top-actions{display:flex;gap:8px}.icon-btn{width:42px;height:42px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--text);font-size:18px}.eyebrow{font-size:12px;color:var(--lime);font-weight:800;letter-spacing:.4px}.hero{position:relative;overflow:hidden;border:1px solid #3a5844;background:linear-gradient(135deg,#294b35,#17291f 72%);border-radius:28px;padding:24px;box-shadow:var(--shadow)}.hero:after{content:"✦";position:absolute;left:16px;bottom:-48px;font-size:180px;color:#d5ff9b0b;pointer-events:none}.hero h1{font-size:clamp(29px,7vw,42px);line-height:1.2;margin:9px 0 12px;max-width:560px}.hero p{color:#d0dfd3;max-width:520px;margin:0 0 20px}.btn{border:0;border-radius:14px;padding:12px 16px;font-weight:850;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none}.primary{background:var(--lime);color:#152016}.primary:hover{background:#d5ff91}.secondary{background:var(--surface2);border:1px solid var(--line);color:var(--text)}.ghost{background:transparent;color:var(--muted);border:1px solid var(--line)}.small{font-size:13px;padding:9px 12px;border-radius:12px}.full{width:100%}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:13px 0 24px}.stat{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:13px 8px;text-align:center}.stat b{display:block;font-size:21px;font-variant-numeric:tabular-nums}.stat span{font-size:11px;color:var(--muted)}.section-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:25px 0 12px}.section-head h2{font-size:20px;margin:0}.muted{color:var(--muted)}.tiny{font-size:12px}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:12px}.card h3{margin:0 0 5px;font-size:18px}.card p{margin:5px 0}.card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.tag{display:inline-flex;align-items:center;border:1px solid #4d6c40;background:#293d2b;color:var(--lime);font-size:12px;border-radius:999px;padding:5px 10px;white-space:nowrap}.tag.blue{color:var(--blue);border-color:#365b70;background:#1c3441}.tag.orange{color:var(--orange);border-color:#6e573b;background:#382d20}.progress{height:8px;background:#2a3b30;border-radius:99px;overflow:hidden;margin:13px 0 7px}.progress>span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--lime2),var(--lime));border-radius:99px;transition:width .2s}.section{display:none;animation:fade .18s ease}.section.active{display:block}@keyframes fade{from{opacity:.65;transform:translateY(3px)}to{opacity:1;transform:none}}.nav{position:fixed;bottom:0;left:0;right:0;z-index:10;background:#0c1411ed;border-top:1px solid var(--line);backdrop-filter:blur(18px);padding-bottom:env(safe-area-inset-bottom)}.nav-inner{max-width:880px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:8px 10px}.nav button{border:0;border-radius:14px;background:transparent;color:var(--muted);padding:7px 2px;font-size:11px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px}.nav button .nav-icon{font-size:20px;line-height:1.2}.nav button.active{background:#24372a;color:var(--lime);font-weight:850}.day-tabs{display:flex;gap:7px;overflow:auto;padding:2px 0 12px;scrollbar-width:thin}.day-tabs button{flex:0 0 auto;border:1px solid var(--line);background:var(--surface);color:var(--muted);padding:9px 12px;border-radius:13px}.day-tabs button.active{background:var(--lime);border-color:var(--lime);color:#162016;font-weight:850}.exercise{display:grid;grid-template-columns:38px minmax(0,1fr) auto;gap:11px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}.exercise:last-child{border-bottom:0}.exercise-num{width:38px;height:38px;border-radius:13px;background:var(--surface2);display:grid;place-items:center;color:var(--lime);font-weight:900}.exercise-title{font-weight:800}.exercise-sub{font-size:12px;color:var(--muted)}.exercise-actions{display:flex;align-items:center;gap:8px}.video-btn{background:#243b2b;border:1px solid #48613f;color:var(--lime);border-radius:11px;padding:8px;font-size:12px}.check{width:22px;height:22px;accent-color:var(--lime)}.timer{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.timer-time{font-size:29px;font-weight:900;font-variant-numeric:tabular-nums;letter-spacing:1px}.timer-actions{display:flex;gap:7px}.days-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.day-tile{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px}.day-tile h3{font-size:15px;margin:7px 0}.tile-icon{font-size:23px}.field-label{display:block;font-size:13px;color:var(--muted);margin:12px 0 5px}.field{width:100%;border:1px solid var(--line);background:#0e1813;color:var(--text);padding:12px;border-radius:12px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.notice{background:#30281f;border:1px solid #6c5137;color:#f5d7b8;padding:12px;border-radius:15px;font-size:12px;margin-top:15px}.empty{padding:25px;text-align:center;color:var(--muted)}.toast{position:fixed;z-index:30;bottom:94px;left:50%;transform:translateX(-50%);background:var(--lime);color:#142015;font-weight:800;padding:10px 16px;border-radius:14px;box-shadow:var(--shadow);display:none;max-width:90%;text-align:center}.toast.show{display:block}.modal{display:none;position:fixed;inset:0;z-index:20;background:#000b;align-items:center;justify-content:center;padding:15px}.modal.open{display:flex}.modal-box{width:100%;max-width:600px;max-height:90vh;overflow:auto;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:17px}.video-frame{width:100%;aspect-ratio:16/9;border:0;border-radius:14px;background:#000}.close-row{display:flex;align-items:center;justify-content:space-between;gap:10px}.badge{font-size:11px;color:var(--muted)}.footer-note{font-size:11px;color:var(--muted);text-align:center;margin-top:24px}.hidden{display:none!important}
+@media(min-width:650px){.app{padding-left:24px;padding-right:24px}.hero{padding:32px}.stats{gap:12px}.days-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:380px){.app{padding-left:11px;padding-right:11px}.hero{padding:20px}.exercise{grid-template-columns:32px minmax(0,1fr) auto;gap:7px}.exercise-num{width:32px;height:34px}.video-btn{padding:7px 6px}.check{width:20px;height:20px}.days-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <div class="brand"><div class="logo">✦</div><span>لياقتي</span></div>
+  <div class="top-actions"><button class="icon-btn" aria-label="الرئيسية" onclick="showSection('home')">⌂</button><button class="icon-btn" aria-label="الإعدادات" onclick="showSection('profile')">⚙</button></div>
+</header>
+
+<main>
+<section id="home" class="section active">
+  <div class="hero">
+    <div class="eyebrow">مدربك الشخصي في البيت</div>
+    <h1 id="heroTitle">خطوة صغيرة اليوم،<br>قوة أكبر غداً.</h1>
+    <p>برنامج متنوع بدون معدات، مع شرح للحركات ومتابعة لتقدمك. ابدأ حسب قدرتك وتدرّج بأمان.</p>
+    <button class="btn primary" onclick="showSection('workout')">ابدأ تمرين اليوم <span>←</span></button>
+  </div>
+  <div class="stats">
+    <div class="stat"><b id="statDuration">25–30</b><span>دقيقة تقريباً</span></div>
+    <div class="stat"><b id="statDone">0/6</b><span>تمارين مكتملة</span></div>
+    <div class="stat"><b id="statStreak">0</b><span>أيام إنجاز</span></div>
+  </div>
+  <div class="section-head"><h2>جلسة اليوم</h2><span class="muted tiny" id="dateLabel"></span></div>
+  <div class="card">
+    <div class="card-top"><div><h3 id="homeWorkoutTitle">كامل الجسم</h3><p class="muted tiny" id="homeWorkoutDesc">قوة متوازنة للجسم كله</p></div><span class="tag" id="homeType">قوة</span></div>
+    <div class="progress"><span id="homeProgress"></span></div><div class="muted tiny" id="homeProgressText">ابدأ بتمرين واحد ثم تابع.</div>
+    <button class="btn secondary small" style="margin-top:12px" onclick="showSection('plan')">عرض خطة الأسبوع</button>
+  </div>
+  <div class="section-head"><h2>روتين يساعدك</h2></div>
+  <div class="card"><div class="card-top"><div><h3>١. الإحماء</h3><p class="muted tiny">تحرك 3–5 دقائق قبل جلسة القوة.</p></div><span class="tile-icon">🔥</span></div></div>
+  <div class="card"><div class="card-top"><div><h3>٢. جودة الحركة</h3><p class="muted tiny">نفّذ الحركة بشكل صحيح، ولا تتسابق مع العدد.</p></div><span class="tile-icon">🎯</span></div></div>
+  <div class="card"><div class="card-top"><div><h3>٣. التعافي</h3><p class="muted tiny">النوم والراحة جزء من التقدم، وليسا تراجعاً.</p></div><span class="tile-icon">🌙</span></div></div>
+</section>
+
+<section id="workout" class="section">
+  <div class="section-head"><div><h2>تمارينك</h2><div class="muted tiny">اختر يوماً، ثم علّم كل تمرين بعد إنجازه.</div></div><span class="tag">بدون معدات</span></div>
+  <div class="day-tabs" id="dayTabs"></div>
+  <div class="card timer">
+    <div><div class="muted tiny">مؤقت الاستراحة</div><div class="timer-time" id="timerDisplay">01:00</div><div class="muted tiny" id="timerHint">استرح حسب حاجتك</div></div>
+    <div class="timer-actions"><button class="btn primary small" id="timerStart" onclick="toggleTimer()">ابدأ</button><button class="btn secondary small" onclick="resetTimer()">إعادة</button></div>
+  </div>
+  <div class="card"><div class="card-top"><div><h3 id="workoutTitle">كامل الجسم</h3><p class="muted tiny" id="workoutDesc"></p></div><span class="tag" id="workoutDuration"></span></div><div class="progress"><span id="workoutProgress"></span></div><div class="muted tiny" id="workoutProgressText"></div><div id="exerciseList"></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px"><button class="btn secondary small" onclick="resetCurrentDay()">إلغاء علامات هذا اليوم</button><button class="btn primary small" onclick="finishDay()">إنهاء الجلسة</button></div></div>
+  <div class="notice">توقف إذا شعرت بألم حاد أو دوخة أو ضيق نفس غير معتاد. اختر النسخة الأسهل إذا احتجت، ولا تتمرن عبر الألم.</div>
+</section>
+
+<section id="plan" class="section">
+  <div class="section-head"><div><h2>خطة 7 أيام</h2><div class="muted tiny">تنويع بين القوة والحركة والتعافي.</div></div></div>
+  <div class="days-grid" id="weekGrid"></div>
+  <div class="footer-note">يمكنك تكرار الخطة أسبوعياً وتعديل الشدة حسب مستواك.</div>
+</section>
+
+<section id="profile" class="section">
+  <div class="section-head"><div><h2>ملفي وإعداداتي</h2><div class="muted tiny">خصص الخطة بما يناسب هدفك.</div></div></div>
+  <div class="card">
+    <label class="field-label" for="userName">الاسم (اختياري)</label><input class="field" id="userName" maxlength="40" placeholder="اكتب اسمك">
+    <label class="field-label" for="goal">الهدف الرئيسي</label><select class="field" id="goal"><option value="fitness">تحسين اللياقة والطاقة</option><option value="strength">تقوية الجسم</option><option value="muscle">بناء العضلات</option><option value="abs">تقوية عضلات البطن</option><option value="mobility">المرونة والحركة</option></select>
+    <div class="form-grid"><div><label class="field-label" for="level">مستواك</label><select class="field" id="level"><option value="beginner">مبتدئ</option><option value="intermediate">متوسط</option></select></div><div><label class="field-label" for="minutes">الوقت المتاح</label><select class="field" id="minutes"><option value="15">15 دقيقة</option><option value="25" selected>25 دقيقة</option><option value="35">35 دقيقة</option></select></div></div>
+    <button class="btn primary full" style="margin-top:16px" onclick="saveProfile()">حفظ الإعدادات</button><p id="profileMessage" class="muted tiny" aria-live="polite"></p>
+  </div>
+  <div class="card"><h3>بياناتك وتقدمك</h3><p class="muted tiny">تُحفظ علامات الإنجاز والإعدادات محلياً على هذا الجهاز والمتصفح، إذا سمح المتصفح بالتخزين. قد تضيع عند حذف بيانات المتصفح.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"><button class="btn secondary small" onclick="exportData()">تصدير نسخة احتياطية</button><button class="btn ghost small" onclick="confirmResetAll()">مسح التقدم</button></div><input type="file" id="importFile" accept="application/json,.json" class="hidden" onchange="importData(event)"><button class="btn secondary small" style="margin-top:8px" onclick="document.getElementById('importFile').click()">استيراد نسخة احتياطية</button></div>
+  <div class="card"><h3>عن لياقتي</h3><p class="muted tiny">نسخة أولية قابلة للتطوير. فيديوهات التمارين تُفتح عبر بحث YouTube وتتطلب اتصالاً بالإنترنت.</p></div>
+</section>
+</main>
+</div>
+
+<nav class="nav" aria-label="التنقل الرئيسي"><div class="nav-inner">
+<button class="active" data-section="home" onclick="showSection('home')"><span class="nav-icon">⌂</span>الرئيسية</button>
+<button data-section="workout" onclick="showSection('workout')"><span class="nav-icon">◉</span>التمرين</button>
+<button data-section="plan" onclick="showSection('plan')"><span class="nav-icon">▦</span>الخطة</button>
+<button data-section="profile" onclick="showSection('profile')"><span class="nav-icon">♙</span>حسابي</button>
+</div></nav>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div id="videoModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="videoTitle" onclick="if(event.target===this)closeVideo()">
+  <div class="modal-box"><div class="close-row"><h3 id="videoTitle">شرح التمرين</h3><button class="btn secondary small" onclick="closeVideo()">إغلاق ✕</button></div><p class="muted tiny">ابحث عن شرح الحركة بالعربية، ثم افتح الفيديو المناسب.</p><div id="videoPlayerWrap"></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"><button id="videoSearch" class="btn primary">البحث على YouTube</button><button class="btn secondary" onclick="closeVideo()">تم</button></div></div>
+</div>
+<script>
+const plans=[
+ {title:"كامل الجسم",type:"قوة",icon:"💪",duration:25,desc:"جلسة متوازنة للجسم كله",ex:[
+ ["ضغط مائل أو عادي","6–12 تكراراً","حافظ على استقامة الجسم. ارفع يديك على سطح ثابت لتسهيل الحركة.","تمرين الضغط الصحيح للمبتدئين بالعربي"],
+ ["قرفصاء (سكوات)","8–15 تكراراً","ادفع الوركين للخلف واجعل الركبتين باتجاه أصابع القدم.","طريقة السكوات الصحيحة للمبتدئين"],
+ ["اندفاع خلفي","6–10 لكل رجل","تمسك بحائط للتوازن إن احتجت.","تمرين الاندفاع الخلفي للمبتدئين"],
+ ["رفع الحوض","10–15 تكراراً","اضغط على الكعبين وارفع الحوض دون تقويس مبالغ للظهر.","تمرين رفع الحوض glute bridge بالعربي"],
+ ["بلانك","15–30 ثانية","شد البطن وتنفس بصورة طبيعية.","تمرين البلانك الصحيح للمبتدئين"],
+ ["مشي في المكان","دقيقتان","سرعة مريحة لتهدئة التنفس.","مشي في المكان تمرين منزلي"]]},
+ {title:"حركة وتعافٍ",type:"تعافٍ",icon:"🌿",duration:15,desc:"حركة لطيفة ومرونة",ex:[
+ ["مشي مريح","5 دقائق","تحرك بوتيرة تستطيع التحدث معها.","مشي خفيف في المنزل"],
+ ["دوائر الكتفين","10 لكل اتجاه","حركة بطيئة دون ألم.","تمارين تحريك الكتفين"],
+ ["قطة وبقرة","8 تكرارات","حرّك الظهر برفق مع التنفس.","تمرين cat cow بالعربي"],
+ ["تمدد خلف الفخذ","15–20 ثانية لكل جهة","لا تهز الجسم ولا تصل إلى الألم.","تمدد عضلات خلف الفخذ"],
+ ["تمدد الصدر","20 ثانية","افتح الصدر برفق مع استقامة الرقبة.","تمدد عضلات الصدر"],
+ ["تنفس هادئ","دقيقتان","تنفس ببطء دون إجبار.","تمارين التنفس الهادئ"]]},
+ {title:"الجزء العلوي",type:"قوة",icon:"🏋️",duration:25,desc:"الصدر والكتف والذراعان والجذع",ex:[
+ ["ضغط مائل أو عادي","6–12 تكراراً","اختر مستوى يناسبك ولا تؤلم الرسغ.","تمرين الضغط للمبتدئين بالعربي"],
+ ["ضغط ضيق سهل","5–10 تكرارات","يمكن أداء الحركة على الحائط أو سطح ثابت.","تمرين الضغط الضيق للمبتدئين"],
+ ["رفع الذراعين Y","8–12 تكراراً","ارفع الذراعين دون شد الرقبة.","تمرين Y raise بدون معدات"],
+ ["لمس الكتف من وضع مرتفع","6–10 لكل جهة","قلل حركة الحوض، ويمكن إسناد اليدين إلى طاولة ثابتة.","plank shoulder taps للمبتدئين"],
+ ["سوبرمان خفيف","8–10 تكرارات","ارفع الأطراف قليلاً دون ضغط أسفل الظهر.","تمرين سوبرمان للظهر"],
+ ["تمدد الكتفين","20 ثانية","حركة مريحة دون ألم.","تمدد الكتفين والصدر"]]},
+ {title:"مرونة وتعافٍ",type:"تعافٍ",icon:"🧘",duration:15,desc:"مرونة وتنفس واستعادة النشاط",ex:[
+ ["مشي خفيف","5 دقائق","سرعة مريحة.","مشي خفيف في المنزل"],
+ ["تمدد مثنيات الورك","15 ثانية لكل جهة","لا تدفع الحركة إلى الألم.","تمدد مثنيات الورك للمبتدئين"],
+ ["وضعية الطفل","20 ثانية","استخدم مدى مريحاً أو تخطّها إن أزعجت الركبتين.","وضعية الطفل يوغا للمبتدئين"],
+ ["تحريك الكاحل","10 لكل جهة","حركة صغيرة ومسيطر عليها.","تمارين مرونة الكاحل"],
+ ["فتح الصدر","20 ثانية","لا تبالغ في تقويس الظهر.","تمدد الصدر والكتفين"],
+ ["تنفس هادئ","دقيقتان","اجعل الزفير مريحاً وطويلاً نسبياً.","تمارين التنفس الهادئ"]]},
+ {title:"الجزء السفلي",type:"قوة",icon:"🦵",duration:25,desc:"الأرداف والفخذان والساقان",ex:[
+ ["سكوات إلى كرسي ثابت","8–15 تكراراً","المس المقعد برفق ثم قف، دون السقوط على الكرسي.","تمرين squat إلى كرسي للمبتدئين"],
+ ["اندفاع خلفي مساعد","6–8 لكل رجل","استند إلى الحائط، أو استبدله بالسكوات إن لم يناسبك.","تمرين الاندفاع الخلفي للمبتدئين"],
+ ["رفع الحوض","10–15 تكراراً","ارفع الحوض مع شد الأرداف.","تمرين glute bridge بالعربي"],
+ ["رفع السمانة","12–18 تكراراً","استند إلى الحائط للتوازن.","تمرين calf raises للمبتدئين"],
+ ["جلوس الحائط","15–30 ثانية","خفف عمق الجلوس إن احتجت.","تمرين wall sit للمبتدئين"],
+ ["تمدد الساق","20 ثانية لكل جهة","توقف إذا شعرت بألم.","تمدد عضلات الساق"]]},
+ {title:"لياقة وبطن",type:"لياقة",icon:"⚡",duration:20,desc:"جذع ثابت وحركة معتدلة",ex:[
+ ["ديد بغ","6–10 لكل جهة","حرّك الذراع والرجل المعاكسة ببطء مع ثبات الظهر.","تمرين dead bug بالعربي"],
+ ["بيرد دوغ","6–10 لكل جهة","مد الذراع والرجل المعاكسة دون تدوير الحوض.","تمرين bird dog بالعربي"],
+ ["رفع الركبتين واقفاً","30 ثانية","تحرك بإيقاع يمكنك التحكم به.","رفع الركبتين واقفاً تمرين"],
+ ["بلانك على الركبتين","15–25 ثانية","حافظ على خط مستقيم من الرأس إلى الركبتين.","بلانك للمبتدئين على الركبتين"],
+ ["مشي في المكان","دقيقتان","حركة معتدلة وتنفس طبيعي.","مشي في المكان للمبتدئين"],
+ ["تنفس وتهدئة","دقيقتان","اخفض سرعة الحركة تدريجياً.","تمارين التنفس الهادئ"]]},
+ {title:"راحة",type:"راحة",icon:"🌙",duration:0,desc:"الراحة جزء من بناء القوة",ex:[
+ ["راحة كاملة","حسب الحاجة","لا يلزم تمرين قوة اليوم. اختر المشي الخفيف فقط إذا رغبت.","أهمية الراحة والتعافي الرياضي"],
+ ["مشي اختياري","10–20 دقيقة","اختياري وبوتيرة سهلة فقط إن رغبت.","مشي خفيف في المنزل"],
+ ["تمدد لطيف","3–5 دقائق","اختياري، وتوقف إن سبب ألماً.","تمددات خفيفة للمبتدئين"]]}
+];
+const STORE_KEY='liaqatiPro_v1';
+let state={selectedDay:(new Date().getDay()+6)%7,done:{},profile:{name:'',goal:'fitness',level:'beginner',minutes:'25'},finished:[]};
+let timerSeconds=60,timerInterval=null,videoQuery='';
+function loadState(){try{const saved=JSON.parse(localStorage.getItem(STORE_KEY)||'null');if(saved&&typeof saved==='object')state={...state,...saved,profile:{...state.profile,...(saved.profile||{})}}}catch(e){}}
+function saveState(){try{localStorage.setItem(STORE_KEY,JSON.stringify(state))}catch(e){toast('تعذر الحفظ في هذا المتصفح. جرّب متصفحاً آخر.');}}
+function currentPlan(){return plans[state.selectedDay]}
+function dayDone(day){return state.done[day]||[]}
+function typeClass(type){return type==='تعافٍ'?'blue':type==='راحة'?'orange':''}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.section===id));window.scrollTo({top:0,behavior:'smooth'});if(id==='workout')renderWorkout()}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove('show'),2400)}
+function renderTabs(){document.getElementById('dayTabs').innerHTML=plans.map((p,i)=>`<button class="${i===state.selectedDay?'active':''}" onclick="selectDay(${i})">اليوم ${i+1}</button>`).join('')}
+function selectDay(i){state.selectedDay=i;saveState();renderAll();showSection('workout')}
+function renderWorkout(){const p=currentPlan();document.getElementById('workoutTitle').textContent=p.title;document.getElementById('workoutDesc').textContent=p.desc;document.getElementById('workoutDuration').textContent=p.duration?p.duration+' دقيقة':'اختياري';renderTabs();document.getElementById('exerciseList').innerHTML=p.ex.map((e,i)=>`<div class="exercise"><div class="exercise-num">${String(i+1).padStart(2,'0')}</div><div><div class="exercise-title">${escapeHtml(e[0])}</div><div class="exercise-sub">${escapeHtml(e[1])}</div><div class="exercise-sub">${escapeHtml(e[2])}</div></div><div class="exercise-actions"><button class="video-btn" onclick="openVideo(${i})" aria-label="شرح ${escapeHtml(e[0])}">▶ فيديو</button><input class="check" type="checkbox" aria-label="إكمال ${escapeHtml(e[0])}" ${dayDone(state.selectedDay).includes(i)?'checked':''} onchange="toggleExercise(${i},this.checked)"></div></div>`).join('');updateProgress()}
+function toggleExercise(i,checked){let arr=dayDone(state.selectedDay).filter(n=>n!==i);if(checked)arr.push(i);state.done[state.selectedDay]=arr;saveState();updateProgress();updateHome()}
+function resetCurrentDay(){if(!confirm('هل تريد إزالة علامات الإنجاز لهذا اليوم؟'))return;state.done[state.selectedDay]=[];state.finished=state.finished.filter(n=>n!==state.selectedDay);saveState();renderAll();toast('تمت إعادة تعيين اليوم')}
+function finishDay(){const p=currentPlan();if(dayDone(state.selectedDay).length<p.ex.length){toast('أكمل التمارين أو علّم ما أنجزته أولاً.');return}if(!state.finished.includes(state.selectedDay))state.finished.push(state.selectedDay);saveState();renderAll();toast('أحسنت! أنهيت جلسة اليوم 🎉')}
+function updateProgress(){const p=currentPlan(),n=dayDone(state.selectedDay).length,total=p.ex.length,percent=Math.round(n/total*100);document.getElementById('workoutProgress').style.width=percent+'%';document.getElementById('workoutProgressText').textContent=`أكملت ${n} من ${total} تمارين (${percent}٪)`;document.getElementById('statDone').textContent=n+'/'+total}
+function updateHome(){const p=currentPlan(),n=dayDone(state.selectedDay).length,total=p.ex.length;document.getElementById('homeWorkoutTitle').textContent=p.title;document.getElementById('homeWorkoutDesc').textContent=p.desc;document.getElementById('homeType').textContent=p.type;document.getElementById('homeType').className='tag '+typeClass(p.type);document.getElementById('statDuration').textContent=p.duration||'راحة';document.getElementById('statDone').textContent=n+'/'+total;document.getElementById('homeProgress').style.width=Math.round(n/total*100)+'%';document.getElementById('homeProgressText').textContent=n===total?'اكتمل البرنامج، أحسنت!':`أنجزت ${n} من ${total} تمارين`;document.getElementById('statStreak').textContent=state.finished.length;const nm=state.profile.name.trim();document.getElementById('heroTitle').innerHTML=nm?`أهلاً ${escapeHtml(nm)}،<br>ابدأ بخطوة اليوم.`:'خطوة صغيرة اليوم،<br>قوة أكبر غداً.'}
+function renderPlan(){document.getElementById('weekGrid').innerHTML=plans.map((p,i)=>`<div class="day-tile"><div class="card-top"><span class="tile-icon">${p.icon}</span><span class="tag ${typeClass(p.type)}">${p.type}</span></div><h3>اليوم ${i+1}: ${p.title}</h3><p class="muted tiny">${p.desc}</p><p class="muted tiny">${p.duration?p.duration+' دقيقة':'راحة أو حركة خفيفة'}</p><button class="btn secondary small full" onclick="selectDay(${i})">افتح البرنامج ←</button></div>`).join('')}
+function renderProfile(){document.getElementById('userName').value=state.profile.name||'';document.getElementById('goal').value=state.profile.goal||'fitness';document.getElementById('level').value=state.profile.level||'beginner';document.getElementById('minutes').value=state.profile.minutes||'25'}
+function saveProfile(){state.profile={name:document.getElementById('userName').value.trim(),goal:document.getElementById('goal').value,level:document.getElementById('level').value,minutes:document.getElementById('minutes').value};saveState();document.getElementById('profileMessage').textContent='تم حفظ إعداداتك على هذا الجهاز.';updateHome();toast('تم حفظ الإعدادات')}
+function renderAll(){renderTabs();renderWorkout();renderPlan();updateHome()}
+function openVideo(i){const e=currentPlan().ex[i];videoQuery=e[3];document.getElementById('videoTitle').textContent='شرح: '+e[0];document.getElementById('videoPlayerWrap').innerHTML='';document.getElementById('videoSearch').onclick=()=>window.open('https://www.youtube.com/results?search_query='+encodeURIComponent(videoQuery),'_blank','noopener');document.getElementById('videoModal').classList.add('open')}
+function closeVideo(){document.getElementById('videoModal').classList.remove('open');document.getElementById('videoPlayerWrap').innerHTML=''}
+function paintTimer(){document.getElementById('timerDisplay').textContent=String(Math.floor(timerSeconds/60)).padStart(2,'0')+':'+String(timerSeconds%60).padStart(2,'0')}
+function toggleTimer(){if(timerInterval){clearInterval(timerInterval);timerInterval=null;document.getElementById('timerStart').textContent='متابعة';return}if(timerSeconds<=0)timerSeconds=60;document.getElementById('timerStart').textContent='إيقاف';timerInterval=setInterval(()=>{if(timerSeconds>0){timerSeconds--;paintTimer()}else{clearInterval(timerInterval);timerInterval=null;document.getElementById('timerStart').textContent='ابدأ';document.getElementById('timerHint').textContent='انتهت الاستراحة';if(navigator.vibrate)navigator.vibrate(150);toast('انتهى وقت الاستراحة')}},1000)}
+function resetTimer(){clearInterval(timerInterval);timerInterval=null;timerSeconds=60;paintTimer();document.getElementById('timerStart').textContent='ابدأ';document.getElementById('timerHint').textContent='استرح حسب حاجتك'}
+function exportData(){const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='liaqati-backup.json';a.click();URL.revokeObjectURL(url);toast('تم تجهيز النسخة الاحتياطية')}
+function importData(ev){const f=ev.target.files&&ev.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result);if(!x||typeof x!=='object'||!x.profile||!x.done)throw Error();state={...state,...x,profile:{...state.profile,...x.profile}};saveState();renderProfile();renderAll();toast('تم استيراد البيانات')}catch(e){toast('ملف النسخة الاحتياطية غير صالح')}ev.target.value=''};r.readAsText(f)}
+function confirmResetAll(){if(!confirm('سيتم حذف تقدمك وإعداداتك المحفوظة من هذا المتصفح. هل تريد المتابعة؟'))return;localStorage.removeItem(STORE_KEY);state={selectedDay:(new Date().getDay()+6)%7,done:{},profile:{name:'',goal:'fitness',level:'beginner',minutes:'25'},finished:[]};renderProfile();renderAll();toast('تم مسح التقدم')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeVideo()});
+loadState();if(!Number.isInteger(state.selectedDay)||state.selectedDay<0||state.selectedDay>6)state.selectedDay=(new Date().getDay()+6)%7;
+document.getElementById('dateLabel').textContent=new Intl.DateTimeFormat('ar',{weekday:'long',day:'numeric',month:'long'}).format(new Date());
+renderProfile();renderAll();paintTimer();
+if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body>
+</html>
